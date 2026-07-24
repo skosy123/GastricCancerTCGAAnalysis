@@ -16,8 +16,8 @@ RESULTS_DIR = os.path.join(WORK_DIR, "results")
 DOWNSTREAM_DIR = os.path.join(WORK_DIR, "downstream")
 os.makedirs(DOWNSTREAM_DIR, exist_ok=True)
 
-GENE = "TP53"                 # change to test a different gene's effect within stage
-MIN_CASES_PER_STAGE = 5       # stages with fewer cases than this are grouped as "Other/rare"
+GENE = "TP53"                 
+MIN_CASES_PER_STAGE = 5       
 
 
 def find_one(pattern):
