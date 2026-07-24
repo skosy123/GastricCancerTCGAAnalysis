@@ -1,22 +1,7 @@
 """
 Stage-Stratified Survival Analysis
-=====================================
-Tumor stage is often the dominant driver of survival, and any gene-level
-effect can be masked (or falsely appear/disappear) if stage isn't
-accounted for. This script:
-
-    1. Reports how many cases fall into each stage (so you can see whether
-       stratification is even viable with your sample size).
-    2. Fits a Cox model with gene mutation status + age + stage together.
-    3. Plots Kaplan-Meier curves split by stage, if group sizes allow it.
-
-Reads:
-    maf_pipeline/results/combined_variants.csv
-    maf_pipeline/results/gene_burden.csv
-    clinical.cohort.<date>.json
-
 Requires: pandas, lifelines
-    pip install pandas lifelines matplotlib
+pip install pandas lifelines matplotlib
 """
 
 import glob
